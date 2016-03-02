@@ -1,0 +1,431 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T3,T1]{fontenc}
+\usepackage[portuges]{babel}
+\usepackage[noenc]{tipa}
+\usepackage{tipx}
+\usepackage[geometry,weather,misc,clock]{ifsym}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{pifont}
+\usepackage{eurosym}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amssymb,amsfonts,textcomp}
+\usepackage{color}
+\usepackage{array}
+\usepackage{hhline}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\hypersetup{
+    pdftex,
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
+    pdftitle={Relatorio Anual 2016 - Leonardo Uieda},
+    pdfauthor={Leonardo Uieda},
+}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+
+% Page layout (geometry)
+\setlength\voffset{-1in}
+\setlength\hoffset{-1in}
+\setlength\topmargin{0.7874in}
+\setlength\oddsidemargin{0.9846in}
+\setlength\textheight{10.118099in}
+\setlength\textwidth{6.2988997in}
+\setlength\footskip{0.0cm}
+\setlength\headheight{0cm}
+\setlength\headsep{0cm}
+
+% Pages styles
+\makeatletter
+\newcommand\ps@Standard{
+  \renewcommand\@oddhead{}
+  \renewcommand\@evenhead{}
+  \renewcommand\@oddfoot{}
+  \renewcommand\@evenfoot{}
+  \renewcommand\thepage{\arabic{page}}
+}
+\makeatother
+\pagestyle{Standard}
+\setlength\tabcolsep{1mm}
+\renewcommand\arraystretch{1.3}
+
+
+\begin{document}
+
+\begin{tabular}{lcr}
+    \includegraphics{img/logo-on.jpg}
+    & \hspace{5cm} &
+    \includegraphics{img/logo-mcti.png}
+\end{tabular}
+
+\vspace{0.5cm}
+
+\begin{center}
+    \textbf{\LARGE RELATÓRIO 2016}
+
+    \vspace{1cm}
+
+    \textbf{MODELAGEM E INVERSÃO DE CAMPOS GRAVITACIONAIS EM COORDENADAS
+            ESFÉRICAS}
+\end{center}
+
+\vspace{1.5cm}
+
+\begin{flushleft}
+
+{\bfseries
+NOME DO ALUNO:
+}
+Leonardo Uieda
+
+{\bfseries
+NIVEL:
+}
+Doutorado
+
+{\bfseries
+ENDEREÇO RESIDENCIAL:
+}
+Rua Aguiar, 49 ap 104. 20261-120 Tijuca, Rio de Janeiro - RJ
+
+{\bfseries
+TELEFONES FIXO e CELULAR:
+}
+(21) 983636761
+
+{\bfseries
+EMAIL NÃO INSTITUCIONAL:
+}
+leouieda@gmail.com
+
+{\bfseries
+DATA DE INÍCIO NA PÓS-GRADUAÇÃO:
+}
+11/2011
+
+{\bfseries
+DATA DE INÍCIO DO PROJETO DE PESQUISA:
+}
+11/2011
+
+{\bfseries
+NOME DO ORIENTADOR:
+}
+Valéria C. F. Barbosa
+
+{\bfseries
+PERÍODO PREVISTO DE BOLSA DE ESTUDOS:
+}
+11/2011 - 10/2015
+
+{\bfseries
+PERÍODO A QUE SE REFERE O RELATÓRIO:
+}
+03/2015 - 02/2016
+
+\vfill
+
+{\small Este relatório foi entregue ao orientador no dia}
+\rule{1.5cm}{0.4pt}
+\hfill
+\rule{4cm}{0.4pt}
+
+\vspace{-0.2cm}
+
+\hfill {\tiny ASSINATURA DO ORIENTADOR}
+
+\vspace{0.5cm}
+
+{\small O orientador emitiu parecer no dia}
+\rule{1.5cm}{0.4pt}
+\hfill
+\rule{4cm}{0.4pt}
+
+\vspace{-0.2cm}
+\hfill {\tiny ASSINATURA DO ORIENTADOR}
+
+\vspace{0.5cm}
+
+{\small Este relatório e o parecer do orientador foi recebido na
+SECRETARIA DA PÓS-GRADUAÇÃO no dia:}
+
+\vspace{0.5cm}
+
+\rule{3cm}{0.4pt}
+\hfill
+\rule{10cm}{0.4pt}
+
+\vspace{-0.2cm}
+
+\hfill {\tiny NOME E ASSINATURA DO FUNCIONÁRIO DA SECRETARIA}
+
+\end{flushleft}
+
+\newpage
+
+%-----------------------------------------------------------------------------
+% PAGINA DE INFORMACOES CURRICULARES
+%-----------------------------------------------------------------------------
+\begin{center}
+\textbf{\large INFORMAÇÕES CURRICULARES, CONTENDO OS SEGUINTES ITENS:}
+\end{center}
+
+\vspace{1cm}
+
+\begin{flushleft}
+
+\noindent (1) TOTAL DE CRÉDITOS CURSADOS EM DISCIPLINAS: 12
+
+\bigskip
+
+\noindent (2) LISTA DE TODAS AS DISCIPLINAS CURSADAS ATÉ O MOMENTO PELO ALUNO
+E OS CONCEITOS OBTIDOS
+
+\bigskip
+
+Tópicos de interpretação de dados gravimétricos e magnéticos - A\\
+Minicurso: ``Electromagnetic methods in applied geophysics'' - (curso sem
+conceito)\\
+Fenômenos críticos em geociências - A\\
+Inversão em métodos potenciais - A\\
+Sísmica aplicada (ênfase em exploração de petróleo e gás) - A
+
+\bigskip
+
+\noindent (3) SITUAÇÃO DO ALUNO QUANTO AOS CRÉDITOS OBTIDOS NOS SEMINÁRIOS
+ANUAIS
+
+\bigskip
+
+Aprovado nos anos de 2012 a 2015.
+
+\bigskip
+
+\noindent (4) SITUAÇÃO DO ALUNO QUANTO AO EXAME DE PROFICIÊNCIA
+
+\bigskip
+
+Aprovado.
+
+\bigskip
+
+\noindent (5) SITUAÇÃO DO ALUNO DE DOUTORADO QUANTO AO EXAME DE QUALIFICAÇÃO
+
+\bigskip
+
+Aprovado no ano 2013.
+
+\bigskip
+
+\noindent (6) LISTA DAS REUNIÕES CIENTÍFICAS EM QUE PARTICIPOU NO PERÍODO A QUE
+SE REFERE O RELATÓRIO, COM O TÍTULO E AUTORES DOS TRABALHOS APRESENTADOS
+
+\bigskip
+
+Nenhuma.
+
+\bigskip
+
+\noindent (7) LISTA DOS ARTIGOS PUBLICADOS, ACEITOS OU SUBMETIDOS
+
+\bigskip
+
+
+(Em revisão) Uieda, L., V. C. F. Barbosa, C. Braitenberg (2015),
+Tesseroids: forward modeling gravitational fields in spherical coordinates,
+Geophysics.
+
+\bigskip
+
+(Em revisão) Carlos, D. U., Uieda, L., and V. C. F. Barbosa (2015),
+How two gravity-gradient inversion methods can be used to reveal different
+geologic features of ore deposit - a case study from the Quadrilátero
+Ferrífero (Brazil),
+Journal of Applied Geophysics.
+
+\bigskip
+
+(Publicado) Oliveira Jr, V. C., D. P. Sales, V. C. F. Barbosa, and L. Uieda
+(2015), Estimation of the total magnetization direction of approximately
+spherical bodies, Nonlinear Processes in Geophysics.
+
+\bigskip
+
+\noindent (8) OUTRAS ATIVIDADES RELEVANTES NO PERÍODO (PARTICIPAÇÃO EM
+TRABALHOS DE CAMPO, ESCOLAS ETC)
+
+\bigskip
+
+Ministrei o curso "Python como uma ferramenta numérica em ciências da Terra:
+uma nova abordagem de programação", oferecido durante a XVIII Escola de Verão
+de Geofísica do IAG - USP, com duração de 20h.  O material didático e
+informações sobre o curso estão disponíveis em
+\url{http://www.leouieda.com/teaching/python-iag-2016.html}
+
+
+\bigskip
+
+\end{flushleft}
+
+\vspace{4cm}
+
+%-----------------------------------------------------------------------------
+% PROJETO
+%-----------------------------------------------------------------------------
+\begin{center}\textbf{\large PROJETO ORIGINAL}\end{center}
+
+\vspace{1cm}
+
+\textit{
+Nesta parte do relatório o estudante deve incluir o projeto de pesquisa tal
+como apresentado à Comissão de Pós-Graduação em Geofísica do Observatório
+Nacional na época da inscrição.
+}
+
+\includepdf[pages={-},offset=2.5cm -2.5cm]{projeto.pdf}
+
+
+\newpage
+
+%-----------------------------------------------------------------------------
+% DESENVOLVIMENTO DO PROJETO DE PESQUISA NO ÚLTIMO RELATÓRIO
+%-----------------------------------------------------------------------------
+\begin{center}
+\textbf{\large RELATO DO DESENVOLVIMENTO DO PROJETO DE PESQUISA NO ÚLTIMO
+RELATÓRIO}
+\end{center}
+
+\vspace{1cm}
+
+No período entre Março de 2014 e Fevereiro de 2015,
+eu finalizei os testes e resultados referentes a modelagem direta com
+tesseroides.
+Também escrevi e submeti um artigo com esses resultados para a revista
+Geophysics.
+No final do período, iniciei o desenvolvimento da metodologia de inversão
+não-linear para mapear a Moho utilizando dados de gravidade.
+
+
+\vspace{3cm}
+
+
+%-----------------------------------------------------------------------------
+% TRABALHO DE PESQUISA DESENVOLVIDO NO PERÍODO
+%-----------------------------------------------------------------------------
+\begin{center}
+\textbf{\large DESCRIÇÃO DETALHADA DO TRABALHO DE PESQUISA DESENVOLVIDO NO
+PERÍODO DO RELATÓRIO}
+\end{center}
+
+\vspace{1cm}
+
+{\centering\bfseries\itshape
+Metodologia aplicada ou desenvolvida
+e
+Resultados parciais já obtidos
+\par}
+
+\bigskip
+
+No período entre Março de 2015 e Fevereiro de 2016,
+eu finalizei, submeti e efetuei a primeira rodada de revisões do artigo
+"Tesseroids: forward modeling gravitational fields in spherical coordinates"
+(primeira parte da minha tese).
+Nesse mesmo período, desenvolvi um método de inversão não-linear para mapear o
+relevo da descontinuidade de Mohorovičić (Moho) a partir de dados de gravidade.
+Fiz a implementação computacional do método proposto, testes com dados
+sintéticos e uma aplicação para estimar a profundidade da Moho para a
+América do Sul.
+Por fim, escrevi um artigo (a segunda parte da tese) relatando o método
+proposto e os resultados obtidos para submissão para revista Geophysical
+Journal International.
+Este manuscrito está anexado abaixo.
+
+
+\bigskip
+
+{\centering\bfseries\itshape
+Dificuldades encontradas e como elas estão sendo superadas
+\par}
+
+\bigskip
+
+A maior dificuldade encontrada foi o curto tempo disponível para a realização
+do trabalho. Fomos capazes de obter os resultados almejados e escrever o
+artigo correspondente com atraso de aproximadamente 4 meses do tempo previsto
+no último relatório.
+Atualmente, o artigo está sendo revisado por minha orientadora antes da
+submissão.
+
+\bigskip
+\bigskip
+
+{\centering\bfseries\itshape
+Manuscrito do artigo sobre inversão não-linear para mapeamento da Moho.
+\par}
+
+
+\input{parte-paper.tex}
+
+\bibliographystyle{gji}
+\bibliography{references}
+
+\newpage
+
+%-----------------------------------------------------------------------------
+% PRÓXIMAS ETAPAS DO TRABALHO DE PESQUISA
+%-----------------------------------------------------------------------------
+\begin{center}
+\textbf{\large PRÓXIMAS ETAPAS DO TRABALHO DE PESQUISA}
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{flushleft}
+
+\textbf{Atividades de pesquisa previstas para o próximo período:}
+
+\begin{enumerate}
+    \item Submissão do segundo artigo para a revista Geophysical Journal
+        International.
+    \item Elaboração da tese baseada nos dois artigos.
+    \item Defesa.
+\end{enumerate}
+
+\textbf{Atividades acadêmicas previstas para o próximo período:}
+
+\bigskip
+
+Nenhuma.
+
+\bigskip
+
+\textbf{Cronograma detalhado das atividades:}
+
+\begin{center}
+\begin{tabular}{l|l}
+    \toprule
+    \textbf{Atividade} & \textbf{Período de execução} \\
+    \midrule
+    Submissão do artigo & Março\\
+    Finalização da tese & Março\\
+    Defesa & Março-Abril\\
+    \bottomrule
+\end{tabular}
+\end{center}
+
+
+\bigskip
+
+\textbf{Data prevista de conclusão do mestrado ou doutorado:} Março-Abril/2016
+
+\end{flushleft}
+
+
+\end{document}

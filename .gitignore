@@ -5,5 +5,5 @@
 *.bbl
 *.swp
 *~
-figs/*.pdf
+figures/*.pdf
 relatorio.pdf
