@@ -1,0 +1,9 @@
+*.blg
+*.out
+*.aux
+*.log
+*.bbl
+*.swp
+*~
+figs/*.pdf
+relatorio.pdf
